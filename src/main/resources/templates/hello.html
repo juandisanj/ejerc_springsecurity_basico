@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido</title>
+</head>
+<body>
+	<h1 th:inline="text">Bienvenido, estás autorizado a entrar</h1>
+	
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Salir" />
+	</form>
+</body>
+</html>
