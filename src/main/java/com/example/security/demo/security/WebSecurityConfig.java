@@ -41,6 +41,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.roles("USER", "ADMIN");
 	}
 
-	
-
 }
